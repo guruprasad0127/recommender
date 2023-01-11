@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    tools:context=".NewsInDetail">
+
+    <ImageView
+        android:id="@+id/RVnewsimage"
+        android:layout_width="411dp"
+        android:layout_height="253dp"
+        android:background="@color/dark1"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+    <TextView
+        android:id="@+id/RVnewsheadline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A100001A"
+        android:fontFamily="@font/prompt_black"
+        android:lineSpacingExtra="-6dp"
+        android:maxLines="3"
+        android:paddingLeft="4dp"
+        android:text="NEWS HEADLINE"
+        android:textColor="@color/alicesmoke"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RVnewsimage" />
+
+
+    <TextView
+        android:id="@+id/RVnewsdescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/prompt_light"
+        android:maxLines="6"
+        android:padding="10dp"
+        android:text="news subtitle\nline2\nline3\nline4"
+        android:textColor="@color/dutch_white"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/newsdetail"
+        app:layout_constraintTop_toBottomOf="@+id/RVnewsheadline"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/newsdetail"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:fontFamily="@font/prompt_medium"
+        android:padding="15dp"
+        android:text="news in detail about in 10 sentences."
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@id/linkbutton"
+        app:layout_constraintTop_toBottomOf="@+id/RVnewsdescription" />
+
+    <Button
+        android:id="@+id/linkbutton"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/prompt_light"
+        android:text="Read Full story"
+        android:textColor="#036A60"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#F0FFFFFF"
+        app:strokeColor="#0F877B" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

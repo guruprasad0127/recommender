@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="5dp"
+    app:cardBackgroundColor="@color/black"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/RVnewsimage"
+            android:layout_width="match_parent"
+            android:layout_height="215dp"
+            android:scaleType="centerCrop"
+            android:background="@color/dark1"/>
+
+        <TextView
+            android:id="@+id/RVnewsheadline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/RVnewsimage"
+            android:background="#A100001A"
+            android:fontFamily="@font/prompt_black"
+            android:lineSpacingExtra="-6dp"
+            android:maxLines="2"
+            android:paddingLeft="4dp"
+            android:text="NEWS HEADLINE"
+            android:textColor="@color/alicesmoke"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/RVnewsdescription"
+            android:layout_below="@id/RVnewsimage"
+            android:fontFamily="@font/prompt_light"
+            android:maxLines="3"
+            android:paddingLeft="8dp"
+            android:text="news subtitle\nline2\nline3\nline4"
+            android:textColor="@color/dutch_white"
+            android:textSize="12dp"
+            android:paddingBottom="3dp"/>
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

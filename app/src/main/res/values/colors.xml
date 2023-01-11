@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="dark_pastel_blue">#779ECC</color>
+    <color name="ceil">#87AACC</color>
+    <color name="pastel_blue">#779ECC</color>
+    <color name="dutch_white">#E9DFC0</color>
+    <color name="pastel_pink">#E8B4A2</color>
+    <color name="dark_salmon">#E89185</color>
+
+    <color name="jordy_blue">#92BFFF</color>
+    <color name="lavender">#EFDEFF</color>
+    <color name="bright_lilac">#D996F6</color>
+    <color name="dark_pastel_purple">#8D67D5</color>
+    <color name="blue_magenta__violet">#4B328E</color>
+    
+    <color name="dark1">#414c50</color>
+    <color name="dark2">#2d383c</color>
+    <color name="dark3">#192428</color>
+    <color name="darkblue2">#000033</color>
+    <color name="darkblue1">#000026</color>
+    <color name="darkblue0">#00001a</color>
+
+    <color name="whitesmoke">#F5F5F5</color>
+    <color name="alicesmoke">#F0F8FF</color>
+
+    <color name="htmlsilver">#C0C0C0</color>
+    <color name="htmlgrey">#808080</color>
+    <color name="darkergrey">#302F2F</color>
+    <color name="darkgrey">#585858</color>
+
+
+
+</resources>

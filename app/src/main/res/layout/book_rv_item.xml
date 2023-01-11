@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_margin="2dp"
+    app:cardCornerRadius="10dp">
+
+
+    <RelativeLayout
+        android:id="@+id/panel"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="7dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="16dp">
+
+        <TextView
+            android:id="@+id/bookitemtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="9dp"
+            android:fontFamily="@font/prompt_bold"
+
+            android:maxLines="1"
+            android:text="City on the edge"
+            android:textColor="@color/htmlsilver"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/bookitemauthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bookitemtitle"
+
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="120dp"
+
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/prompt"
+
+            android:maxLines="1"
+            android:text="Mark Goldman"
+            android:textColor="@color/htmlgrey"
+            android:textSize="12dp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/bookitemauthor"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="25dp"
+
+            android:rating="4.7" />
+
+        <TextView
+            android:id="@+id/bookitemtotalrating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ratingBar"
+
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="-14dp"
+            android:layout_toEndOf="@+id/ratingBar"
+
+            android:fontFamily="@font/prompt"
+            android:maxLines="1"
+            android:text="1382"
+            android:textColor="@color/darkgrey"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/publicationyear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bookitemauthor"
+
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/prompt_medium"
+
+            android:maxLines="1"
+            android:text="2014"
+            android:textColor="@color/darkgrey"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ratingBar"
+
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/prompt"
+
+            android:maxLines="1"
+            android:text="en-US"
+            android:textColor="@color/htmlgrey"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/favbutton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="7dp"
+            android:src="@drawable/ic_baseline_favorite_24" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/bookcover"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        app:srcCompat="@drawable/bookitemcover" />
+
+</RelativeLayout>

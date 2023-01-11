@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/backgroundforhomebook"
+    tools:context=".BookDetail_Activity">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:transitionName="panelTN"
+        android:layout_width="match_parent"
+        android:layout_height="232dp"
+        android:background="#A9000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-16dp">
+
+        <TextView
+            android:transitionName="booknameTN"
+            android:id="@+id/bookitemtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="25dp"
+
+            android:fontFamily="@font/prompt_bold"
+            android:maxLines="1"
+            android:text="City on the edge"
+            android:textColor="@color/htmlsilver"
+            android:textSize="25dp" />
+
+        <TextView
+            android:transitionName="bookauthorTN"
+            android:id="@+id/bookitemauthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bookitemtitle"
+
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="180dp"
+
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/prompt"
+
+            android:maxLines="1"
+            android:text="Mark Goldman"
+            android:textColor="@color/htmlgrey"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/publicationyear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/bookitemauthor"
+
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="175dp"
+            android:layout_marginTop="98dp"
+            android:fontFamily="@font/prompt"
+            android:maxLines="1"
+            android:text="2014"
+            android:textColor="@color/htmlsilver"
+            android:textSize="15dp"
+            android:transitionName="publishyearTN" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/Widget.AppCompat.RatingBar.Indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bookitemauthor"
+
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="175dp"
+            android:layout_marginTop="41dp"
+            android:rating="4.7"
+            android:transitionName="ratingbarTN" />
+
+        <TextView
+            android:id="@+id/bookitemtotalrating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ratingBar"
+
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/ratingBar"
+            android:fontFamily="@font/prompt"
+            android:maxLines="1"
+            android:text="1382"
+            android:textColor="@color/htmlgrey"
+            android:textSize="14dp"
+            android:transitionName="totalratingTN" />
+
+        <TextView
+            android:id="@+id/language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ratingBar"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="223dp"
+            android:layout_marginTop="21dp"
+            android:fontFamily="@font/prompt"
+            android:maxLines="1"
+            android:text="en-US"
+            android:textColor="@color/htmlsilver"
+            android:textSize="15dp"
+            android:transitionName="langaugeTN" />
+
+        <ImageView
+            android:id="@+id/favbutton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-37dp"
+            android:layout_marginTop="174dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="9dp"
+            android:src="@drawable/ic_baseline_favorite_24"
+            android:transitionName="favbuttonTN" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_marginTop="-2dp"
+        android:background="#E9000000"
+        android:fontFamily="@font/prompt_light"
+        android:lineSpacingExtra="2dp"
+        android:padding="25dp"
+        android:text="@string/book_desc"
+        android:textColor="@color/whitesmoke"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2" />
+
+    <ImageView
+        android:id="@+id/bookcover"
+        android:layout_width="160dp"
+        android:layout_height="220dp"
+        android:layout_alignParentStart="true"
+
+
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:transitionName="bookcoverTN"
+        app:srcCompat="@drawable/bookitemcover"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="413dp" />
+
+    <Button
+        android:id="@+id/linkbutton"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="83dp"
+        android:shadowColor="#5E4701"
+        android:text="Search in amazon"
+        android:textColor="#5E4704"
+        android:textColorHighlight="#755802"
+        android:textColorHint="#473603"
+        android:textColorLink="#594304"
+        android:textSize="25dp"
+        android:textAlignment="center"/>
+
+
+</RelativeLayout>
